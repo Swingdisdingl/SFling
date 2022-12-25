@@ -93,21 +93,22 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
     local chat = message.Message
 if string.find(chat,command3) and table.find(Owner, player) then
     game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
+    wait(1);
+    god();
     wait(2)
-    god()
-    wait(3)
     resize()
-    wait(5)
+    wait(1)
     DSeat()
 end
 end)
 end
     game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
-    wait(1)
-    god()
+    wait(1);
+    god();
     wait(2)
     resize()
-    wait(4)
+    wait(1)
     DSeat()
+    wait(4)
     DMap()
 end
