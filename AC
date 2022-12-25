@@ -32,7 +32,7 @@ end
 
 local function god()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
-    wait(9)
+    wait(12)
     game.Players.LocalPlayer.Character.BodyEffects:FindFirstChild('K.O'):Destroy()
 end
 
