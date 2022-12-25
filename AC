@@ -1,1 +1,114 @@
+local alt = "chocolate4pplover12"
+local host = getgenv().Owner
 
+local function resize()
+    loadstring(game:HttpGet('https://pastebin.com/raw/MLR2zqtp'))()
+end
+
+local function DMap()
+game.Workspace.AnzuAdPlacement:Destroy()
+wait(0.1)
+game.Workspace.AnzuAdPlacement:Destroy()
+wait(0.1)
+game.Workspace.AnzuAdPlacement:Destroy()
+wait(0.1)
+game.Workspace.MAP:Destroy()
+game.Workspace.Vehicles:Destroy()
+game.Workspace.Lights:Destroy()
+game.Workspace.Cashiers:Destroy()
+game.Workspace.Bush:Destroy()
+game.Workspace.print:Destroy()
+game.Workspace.Ignored:Destroy()
+print("Destroyed for better performance")
+end
+
+local function DSeat()
+        for i, v in next, game.Workspace:GetDescendants() do
+            if v:IsA("Seat") then
+            v:Destroy()
+        end
+    end
+end
+
+local function god()
+    game.Players.LocalPlayer.Character.Humanoid:Destroy()
+    wait(7)
+    game.Players.LocalPlayer.Character.BodyEffects:FindFirstChild('K.O'):Destroy()
+end
+
+if game.Players.LocalPlayer.UserId == 3360178983 then
+
+command1 = ">rhat"
+
+if game.Players.LocalPlayer.Name == alt then
+local Owner = {
+   host
+}
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(message)
+    local player = message.FromSpeaker
+    local chat = message.Message
+if string.find(chat,command1) and table.find(Owner, player) then
+    for i,v in next, game.Players.LocalPlayer.Character:GetDescendants() do
+		if v:IsA("Accessory") then
+			for i,p in next, v:GetDescendants() do
+				if p:IsA("Weld") then
+					p:Destroy()
+				end
+			end
+		end
+	end
+end
+end)
+end
+
+command2 = ">rejoin"
+
+if game.Players.LocalPlayer.Name == alt then
+local Owner = {
+   host
+}
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(message)
+    local player = message.FromSpeaker
+    local chat = message.Message
+if string.find(chat,command2) and table.find(Owner, player) then
+    game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId)
+end
+end)
+end
+
+command3 = ">resize"
+
+if game.Players.LocalPlayer.Name == alt then
+local Owner = {
+   host
+}
+
+local LocalPlayer = game:GetService("Players").LocalPlayer
+game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(message)
+    local player = message.FromSpeaker
+    local chat = message.Message
+if string.find(chat,command3) and table.find(Owner, player) then
+    game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
+    wait(1);
+    god();
+    wait(2)
+    resize()
+    wait(1)
+    DSeat()
+end
+end)
+end
+    game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
+    wait(1);
+    god();
+    wait(2)
+    resize()
+    wait(1)
+    DSeat()
+    wait(4)
+    DMap()
+end
