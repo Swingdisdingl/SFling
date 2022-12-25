@@ -95,16 +95,17 @@ if string.find(chat,command3) and table.find(Owner, player) then
     game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
     wait(2)
     god()
+    wait(3)
     resize()
-    wait(4)
+    wait(5)
     DSeat()
-    DMap()
 end
 end)
 end
     game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
-    wait(2)
+    wait(1)
     god()
+    wait(2)
     resize()
     wait(4)
     DSeat()
