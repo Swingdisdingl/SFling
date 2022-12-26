@@ -1,11 +1,11 @@
 local alt = "chocolate4pplover12"
 local host = getgenv().Owner
-
-local function resize()
+    
+function resize()
     loadstring(game:HttpGet('https://pastebin.com/raw/MLR2zqtp'))()
 end
 
-local function DMap()
+function DMap()
 game.Workspace.AnzuAdPlacement:Destroy()
 wait(0.1)
 game.Workspace.AnzuAdPlacement:Destroy()
@@ -22,7 +22,7 @@ game.Workspace.Ignored:Destroy()
 print("Destroyed for better performance")
 end
 
-local function DSeat()
+function DSeat()
         for i, v in next, game.Workspace:GetDescendants() do
             if v:IsA("Seat") then
             v:Destroy()
@@ -30,13 +30,23 @@ local function DSeat()
     end
 end
 
-local function god()
+function god()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
     wait(12)
     game.Players.LocalPlayer.Character.BodyEffects:FindFirstChild('K.O'):Destroy()
 end
 
 if game.Players.LocalPlayer.UserId == 3360178983 then
+
+    game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
+    wait(1);
+    god();
+    wait(2)
+    resize()
+    wait(1)
+    DSeat()
+    wait(4)
+    DMap()
 
 command1 = ">rhat"
 
@@ -118,13 +128,4 @@ if string.find(chat,command4) and table.find(Owner, player) then
 end
 end)
 end
-    game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
-    wait(1);
-    god();
-    wait(2)
-    resize()
-    wait(1)
-    DSeat()
-    wait(4)
-    DMap()
 end
