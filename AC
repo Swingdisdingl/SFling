@@ -19,7 +19,6 @@ game.Workspace.Cashiers:Destroy()
 game.Workspace.Bush:Destroy()
 game.Workspace.print:Destroy()
 game.Workspace.Ignored:Destroy()
-print("Destroyed for better performance")
 end
 
 function DSeat()
@@ -32,16 +31,17 @@ end
 
 function god()
     game.Players.LocalPlayer.Character.Humanoid:Destroy()
-    wait(12)
+    wait(8)
     game.Players.LocalPlayer.Character.BodyEffects:FindFirstChild('K.O'):Destroy()
 end
 
 if game.Players.LocalPlayer.UserId == 3360178983 then
+print("Destroyed for better performance")
 
     game:GetService('Players').LocalPlayer.Character:WaitForChild('FULLY_LOADED_CHAR');
     wait(1);
     god();
-    wait(2)
+    wait(1.5)
     resize()
     wait(1)
     DSeat()
@@ -102,7 +102,6 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
     local player = message.FromSpeaker
     local chat = message.Message
 if string.find(chat,command3) and table.find(Owner, player) then
-    god();
     loadstring(game:HttpGet('https://github.com/DigitalityScripts/roblox-scripts/raw/main/loop%20fling%20all'))()
 end
 end)
@@ -121,7 +120,7 @@ game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClie
     local chat = message.Message
 if string.find(chat,command4) and table.find(Owner, player) then
     god();
-    wait(2)
+    wait(1.5)
     resize()
     wait(1)
     DSeat()
