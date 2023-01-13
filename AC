@@ -1,4 +1,4 @@
-local alt = "chocolate4pplover12"
+local alt = getgenv().Alt
 local host = getgenv().Owner
     
 function resize()
