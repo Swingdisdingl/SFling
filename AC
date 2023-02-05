@@ -50,7 +50,7 @@ print("Destroyed for better performance")
 
 command1 = ">rhat"
 
-if game.Players.LocalPlayer.Name == alt then
+if game.Players.LocalPlayer.Name == Alt then
 local Owner = {
    host
 }
@@ -75,7 +75,7 @@ end
 
 command2 = ">rejoin"
 
-if game.Players.LocalPlayer.Name == alt then
+if game.Players.LocalPlayer.Name == Alt then
 local Owner = {
    host
 }
@@ -92,7 +92,7 @@ end
 
 command3 = ">remove all"
 
-if game.Players.LocalPlayer.Name == alt then
+if game.Players.LocalPlayer.Name == Alt then
 local Owner = {
    host
 }
@@ -110,7 +110,7 @@ end
 
 command4 = ">reset"
 
-if game.Players.LocalPlayer.Name == alt then
+if game.Players.LocalPlayer.Name == Alt then
 local Owner = {
    host
 }
